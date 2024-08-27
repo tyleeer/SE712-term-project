@@ -1036,8 +1036,8 @@ ol {
 }
 
 .features.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1046,8 +1046,8 @@ ol {
   }
 
   .features.section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
@@ -1057,8 +1057,8 @@ ol {
   }
 
   .features.section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -2142,7 +2142,7 @@ ol {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 .hero-area::before {
@@ -2642,242 +2642,6 @@ ol {
   color: #FFA842;
 }
 
-/*=============================
-	Pricing Table CSS
-===============================*/
-.pricing-table {
-  background-image: url("../images/pricing/pricing-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.pricing-table.extra-page {
-  background-image: none;
-  background-color: #F4F7FA;
-}
-
-.pricing-table.overlay:before {
-  background: linear-gradient(45deg, #3813c2, #F20487);
-  opacity: 0.9;
-}
-
-.pricing-table .section-title {
-  margin-bottom: 50px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pricing-table .section-title {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing-table .section-title {
-    margin-bottom: 20px;
-  }
-}
-
-.pricing-table .single-table {
-  border-radius: 6px;
-  margin-top: 40px;
-  background-color: #fff;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  padding: 50px 35px;
-  text-align: center;
-  z-index: 0;
-  transition: all 0.4s ease;
-  position: relative;
-  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
-}
-
-.pricing-table .single-table:hover {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.13);
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.13);
-}
-
-.pricing-table .single-table.middle .table-head .title {
-  border-color: #F20487;
-  color: #F20487;
-}
-
-.pricing-table .single-table .table-head .title {
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 25px;
-  color: #3080e3;
-  padding: 8px 20px;
-  border: 2px solid #3080e3;
-  display: inline-block;
-  border-radius: 30px;
-}
-
-.pricing-table .single-table .table-head p {
-  font-weight: 400;
-}
-
-.pricing-table .single-table .table-head .price {
-  padding-top: 20px;
-}
-
-.pricing-table .single-table .table-head .price .amount {
-  font-size: 47px;
-  font-weight: 600;
-  display: inline-block;
-  position: relative;
-}
-
-.pricing-table .single-table .button {
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.pricing-table .single-table .button .btn {
-  text-transform: none;
-  padding: 14px 35px;
-  position: relative;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.pricing-table .single-table .button .btn::before {
-  position: absolute;
-  content: "";
-  left: -10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.pricing-table .single-table .button .btn::after {
-  position: absolute;
-  content: "";
-  right: -10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.pricing-table .single-table .table-content .table-list li {
-  position: relative;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.pricing-table .single-table .table-content .table-list li:last-child {
-  margin: 0;
-}
-
-.pricing-table .single-table .table-content .table-list li i {
-  color: #3813c2;
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  top: 4px;
-}
-
-.pricing-table.style2 .single-table {
-  text-align: left;
-  padding: 40px;
-}
-
-.pricing-table.style2 .single-table.middle .table-head .title {
-  color: #F20487;
-}
-
-.pricing-table.style2 .single-table .table-head .title {
-  color: #3813c2;
-  border: none;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.pricing-table.style2 .single-table .table-head .price {
-  padding-top: 0;
-}
-
-.pricing-table.style2 .single-table .table-head .price .amount {
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.pricing-table.style2 .single-table .table-head .price .amount .currency {
-  font-weight: 500;
-  color: #151515;
-  font-size: 18px;
-  position: absolute;
-  left: 0;
-  top: auto;
-  bottom: 9px;
-}
-
-.pricing-table.style2 .single-table .table-head .price .amount .duration {
-  color: #101130;
-}
-
-.pricing-table.style2 .single-table .table-list {
-  margin-top: 40px;
-}
-
-.pricing-table.style2 .single-table .table-list li {
-  font-size: 15px;
-  margin-bottom: 16px;
-  padding-left: 25px;
-  font-weight: 400;
-  color: #101130;
-  position: relative;
-}
-
-.pricing-table.style2 .single-table .table-list li::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "\ea5a";
-  font-family: lineIcons;
-  color: #68D585;
-  font-size: 15px;
-}
-
-.pricing-table.style2 .single-table .table-list li.disable {
-  color: #727272;
-}
-
-.pricing-table.style2 .single-table .table-list li.disable::before {
-  color: #727272;
-  content: "\ea87";
-}
-
-.pricing-table.style2 .single-table .button {
-  margin: 0;
-  margin-top: 50px;
-}
-
-.pricing-table.style2 .single-table .button .btn i {
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 10px;
-  position: relative;
-  top: 2px;
-}
-
-.pricing-table.style2 .single-table .no-card {
-  display: block;
-  margin-top: 15px;
-}
-
 /*======================================
     Call To Action CSS
 ========================================*/
@@ -3066,7 +2830,8 @@ ol {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #fff;
+  color: #fff;
+  background-color: #101130;
   position: relative;
 }
 
@@ -3117,7 +2882,7 @@ only screen and (min-width: 1400px) {
 }
 
 .footer .single-footer.f-about p {
-  color: #727272;
+  color: #ffffff80;
   margin-top: 25px;
   font-size: 15px;
   line-height: 26px;
@@ -3125,7 +2890,7 @@ only screen and (min-width: 1400px) {
 
 .footer .single-footer.f-about .social-title {
   font-weight: 500;
-  color: #797979;
+  color: #ffffff80;
   margin-top: 15px;
   font-size: 14px;
 }
@@ -3172,7 +2937,7 @@ only screen and (min-width: 1400px) {
 .footer .single-footer.f-link li a {
   font-size: 15px;
   font-weight: 400;
-  color: #727272;
+  color: #ffffff80;
   position: relative;
 }
 
@@ -3299,7 +3064,7 @@ only screen and (min-width: 1400px) {
 }
 
 .footer .copyright .copyright-text {
-  color: #727272;
+  color: #ffffff80;
   font-size: 15px;
   margin: 0;
 }
