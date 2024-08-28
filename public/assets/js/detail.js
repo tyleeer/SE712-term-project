@@ -1,4 +1,3 @@
-const mapKey = "AIzaSyDPKwybmuIj1ENn9xbEB1VHPUsIP42VUm4";
 // ฟังก์ชันเพื่อดึงค่า parameter จาก URL
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -16,10 +15,39 @@ function onPageLoad() {
 
   console.log("ID:", id);
   loadEvents(id);
+
+  // Attach delete event handler
+  const deleteButton = document.getElementById("deleteButton");
+  if (deleteButton) {
+    deleteButton.addEventListener("click", () => deleteEvent(id));
+  }
 }
 
 // รอให้เอกสารโหลดเสร็จแล้วค่อยเรียกใช้ฟังก์ชัน onPageLoad
 document.addEventListener("DOMContentLoaded", onPageLoad);
+
+// ฟังก์ชันลบเหตุการณ์
+function deleteEvent(eventId) {
+  if (confirm("Are you sure you want to delete this event?")) {
+    fetch(`/api/events/${eventId}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error("Network response was not ok.");
+      })
+      .then((data) => {
+        console.log("Event deleted:", data);
+        // Redirect to home page after successful deletion
+        window.location.href = "/index.html"; // Adjust path if needed
+      })
+      .catch((error) => {
+        console.error("Error deleting event:", error);
+      });
+  }
+}
 
 function loadEvents(id) {
   fetch(`/api/events/search?id=${id}`)

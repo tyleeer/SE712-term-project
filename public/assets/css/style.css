@@ -100,3 +100,12 @@ section.hero-area {
   color: blue;
   cursor: pointer;
 }
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.button-group .button {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
