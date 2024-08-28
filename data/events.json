@@ -25,7 +25,12 @@
     "datetime": "Fri Sep 13 2024 at 08:00 pm",
     "location": "Liquid Room, กาแฟแบ่งปัน, นิมมานเหมินท์ ซอย 13, สุเทพ, หมู่ที่ 8, เชียงใหม่ 50200, ประเทศไทย,Chiang Mai, Thailand",
     "hosted": "Liquid Room",
-    "eventDescription": "Giuseppe Ottaviani ดีเจและโปรดิวเซอร์ระดับโลก ที่เคยผ่านเวทีงานเฟสติวัลใหญ่อย่าง Tomorrowland, Ultra Music Festival, EDC, Dreamstate, Transmission, Subculture และอื่นๆอีกมากมาย เป็นหนึ่งในศิลปิน Trance ที่กำลังเป็นที่ต้องการตัวมากที่สุดในโลก จะมาสร้างปรากฎการณ์ความสนุกให้กับทุกคน ในคืนที่ 13 กันยายนนี้ บอกเลยว่างานนี้ไม่ควรพลาดเด็ดขาดกับประสบการณ์อันใกล้ชิดกับดีเจระดับโลก ในค่ำคืนสุดพิเศษนี้ !",
+    "eventDescription": [
+      "Giuseppe Ottaviani ดีเจและโปรดิวเซอร์ระดับโลก ที่เคยผ่านเวทีงานเฟสติวัลใหญ่อย่าง Tomorrowland,",
+      "Ultra Music Festival, EDC, Dreamstate, Transmission, Subculture และอื่นๆอีกมากมาย",
+      "เป็นหนึ่งในศิลปิน Trance ที่กำลังเป็นที่ต้องการตัวมากที่สุดในโลก จะมาสร้างปรากฎการณ์ความสนุกให้กับทุกคน",
+      "ในคืนที่ 13 กันยายนนี้ บอกเลยว่างานนี้ไม่ควรพลาดเด็ดขาดกับประสบการณ์อันใกล้ชิดกับดีเจระดับโลก ในค่ำคืนสุดพิเศษนี้ !"
+    ],
     "tags": "trending",
     "images": "https://cdn-az.allevents.in/events3/banners/962a14897268fa41ce7db433a3a49cc45aa68157c1febe8e453d8f13dfff6a6d-rimg-w1200-h457-dc120702-gmir?v=1723742443",
     "lat": "18.79666727545001",
@@ -57,7 +62,12 @@
     "datetime": "Sat Aug 31 2024 at 08:00 pm",
     "location": "13 Soi 13, Nimmanhaemin Road, Chiang Mai City, Chiang Mai, Thailand, Chiang Mai 50200",
     "hosted": "Liquid Room",
-    "eventDescription": "ใครที่ชื่นชอบแนวเพลง Trance เตรียมตัวให้พร้อม! กับการมาเยือนเชียงใหม่ครั้งแรกของ Alex M.o.r.p.h. หนึ่งในดีเจและโปรดิวเซอร์ชั้นนำในวงการเพลง Trance ที่เคยร่วมมือกับศิลปินระดับโลกอย่าง Armin van Buuren, Paul van Dyk, Gareth Emery, Dash Berlin และอื่นๆอีกมากมาย นอกจากนี้เขายังได้โชว์ในเวทีระดับโลกอย่าง Tomorrowland, Dreamstate, A State Of Trance บอกเลยว่าไม่ควรพลาด",
+    "eventDescription": [
+      "ใครที่ชื่นชอบแนวเพลง Trance เตรียมตัวให้พร้อม! กับการมาเยือนเชียงใหม่ครั้งแรกของ Alex M.o.r.p.h.",
+      "หนึ่งในดีเจและโปรดิวเซอร์ชั้นนำในวงการเพลง Trance ที่เคยร่วมมือกับศิลปินระดับโลกอย่าง Armin van Buuren,",
+      "Paul van Dyk, Gareth Emery, Dash Berlin และอื่นๆอีกมากมาย",
+      "นอกจากนี้เขายังได้โชว์ในเวทีระดับโลกอย่าง Tomorrowland, Dreamstate, A State Of Trance บอกเลยว่าไม่ควรพลาด"
+    ],
     "tags": "trending",
     "images": "https://cdn-az.allevents.in/events1/banners/ea44adcbb41440829171427afc4134fab0e5c52a07ee63d67932276132f8f487-rimg-w1200-h675-dc120f10-gmir?v=1723742437",
     "lat": "18.79666727545001",
@@ -78,9 +88,9 @@
   },
   {
     "id": 6,
-    "title": "Fri Nov 08 2024 at 03:00 pm to Sun Nov 10 2024 at 12:00 pm",
+    "title": "Mycelium Festival 2024",
     "category": "music",
-    "datetime": "8 Nov 2024 at 15:00 to 10 Nov 2024 at 12:00",
+    "datetime": "Fri Nov 08 2024 at 03:00 pm to Sun Nov 10 2024 at 12:00 pm",
     "location": "Tiger jungle art camp เสือดำ อาร์ตแค้มป์, ครัวเวียงปัน ดาว, เชียงดาว, หมู่ที่ 12, เชียงใหม่ 50170, ประเทศไทย,Amphoe Chiang Dao, Chiang Mai, Thailand",
     "hosted": "Mycelium festival",
     "eventDescription": [
@@ -162,7 +172,7 @@
       "#สมัครออนไลน์ได้ที่ www.cmu-marathon.com/"
     ],
     "tags": "popular",
-    "images": "https://cdn-az.allevents.in/events2/banners/0e464389495b81db64e38de1ca0f4d001e87749ab0b5fc49f71ad12683770206-rimg-w1200-h628-dc710711-gmir?v=1723742441",
+    "images": "https://cdn-az.allevents.in/events5/banners/54cf71fdd617dc5cd4f9d042c8c2c624639501b7017caf62fbb67aee3ca5b38f-rimg-w1200-h446-dc363380-gmir?v=1724211516",
     "lat": "18.808328150907755",
     "lon": "98.95468891027019"
   },
@@ -213,7 +223,7 @@
       "✏️#ช่องทางการสมัคร",
       "สมัคร Link : https://race.thai.run/bkalanna2024?fbclid=IwAR1kho1YThACV_0J2IsZxVywvD1L7sYpCBmA1IPZN4IJnXcmxbP1s1MXRHw"
     ],
-    "tags": "",
+    "tags": "trending",
     "images": "https://cdn-az.allevents.in/events5/banners/be3cc8cdcd0b9604f9e6884e0a809ccc4d590058e6c98e4854584cf65193e93a-rimg-w1200-h628-dcffffff-gmir?v=1723833318",
     "lat": "18.74474091821748",
     "lon": "98.92792496446383"
