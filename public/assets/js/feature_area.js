@@ -31,52 +31,52 @@ function displayEvents(events, section) {
     // Create the overlay div with an image and description
     const overlayDiv = document.createElement("div");
     overlayDiv.className = "overlay";
+
+    // Create a clickable link for the image
+    const imgLink = document.createElement("a");
+    imgLink.href = `detail.html?id=${event.id}`;
+
     const img = document.createElement("img");
     img.src = `${event.images}`;
     img.className = "card-img-top";
     img.alt = "...";
 
+    imgLink.appendChild(img);
+
     const descDiv = document.createElement("div");
     descDiv.className = "desc";
     descDiv.textContent = `${event.category}`;
 
-    overlayDiv.appendChild(img);
+    overlayDiv.appendChild(imgLink); // Append the clickable image link
     overlayDiv.appendChild(descDiv);
 
-    // Create the flex container div
-    const flexDiv = document.createElement("div");
-    flexDiv.className = "d-flex";
-
-    // Create the first card-body div (for date)
-    const dateCardBody = document.createElement("div");
-    dateCardBody.className = "card-body w-25";
-
-    const monthTitle = document.createElement("h5");
-    monthTitle.className = "card-title text-center";
-    monthTitle.textContent = "NOV";
-
-    const dateText = document.createElement("h5");
-    dateText.className = "card-text text-center";
-    dateText.textContent = "25-26";
-
-    dateCardBody.appendChild(monthTitle);
-    dateCardBody.appendChild(dateText);
-
-    // Create the second card-body div (for event details)
+    // Create the merged card-body div for event details
     const detailsCardBody = document.createElement("div");
-    detailsCardBody.className = "card-body ps-0 w-75";
+    detailsCardBody.className = "card-body";
+
+    // Create a clickable link for the event title
+    const eventLink = document.createElement("a");
+    eventLink.href = `detail.html?id=${event.id}`;
+    eventLink.style.textDecoration = "none";
 
     const eventTitle = document.createElement("h5");
     eventTitle.className = "card-title";
     eventTitle.textContent = `${event.title}`;
 
+    eventLink.appendChild(eventTitle); // Append the clickable title link
+
+    // Create the date elements (month and date) below the title
+    const dateContainer = document.createElement("div");
+    dateContainer.className = "mt-2";
+
+    const dateTitle = document.createElement("h6");
+    dateTitle.className = "card-subtitle";
+    dateTitle.textContent = `${event.datetime}`;
+
+    dateContainer.appendChild(dateTitle);
+
     const eventDesc = document.createElement("p");
-    eventDesc.className = "card-text fw-bold";
-    // eventDesc.textContent = `${
-    //   Array.isArray(event.eventDescription)
-    //     ? event.eventDescription.join("<br>")
-    //     : event.eventDescription
-    // }`;
+    eventDesc.className = "card-text fw-bold mt-2";
     const fullDesc = Array.isArray(event.eventDescription)
       ? event.eventDescription.join("<br>")
       : event.eventDescription;
@@ -102,22 +102,15 @@ function displayEvents(events, section) {
       eventDesc.appendChild(readMore);
     }
 
-    const eventTime = document.createElement("p");
-    eventTime.className = "card-text";
-    eventTime.textContent = `${event.datetime}`;
-
-    detailsCardBody.appendChild(eventTitle);
+    // Append the title, date, and description to the details body
+    detailsCardBody.appendChild(eventLink); // Clickable title link
+    detailsCardBody.appendChild(dateContainer); // Date below the title
     detailsCardBody.appendChild(eventDesc);
-    detailsCardBody.appendChild(eventTime);
-
-    // Append the card bodies to the flex container
-    flexDiv.appendChild(dateCardBody);
-    flexDiv.appendChild(detailsCardBody);
 
     // Append all elements to the card div
     card.appendChild(starDiv);
     card.appendChild(overlayDiv);
-    card.appendChild(flexDiv);
+    card.appendChild(detailsCardBody); // Append merged card body
 
     // Append the card to the column div
     colDiv.appendChild(card);
