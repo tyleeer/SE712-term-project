@@ -53,6 +53,7 @@ section.hero-area {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  height: 370px;
 }
 
 .star {
@@ -81,7 +82,9 @@ section.hero-area {
   position: relative;
 }
 
-.overlay img {
+.overlay img, .overlay a {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -108,4 +111,14 @@ section.hero-area {
 
 .button-group .button {
   margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.card-text {
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.6em;
+  -webkit-line-clamp: 2;
 }
