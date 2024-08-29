@@ -8,12 +8,23 @@ document.getElementById("searchInput").addEventListener("input", filterEvents);
 function loadEvents() {
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get("category");
+  const searchTerm = urlParams.get("search");
 
   let fetchUrl = "/api/events/all"; // Default to fetch all events
 
-  // If a category is specified in the URL, update the fetch URL
-  if (category) {
-    fetchUrl = `http://localhost:3000/api/events/search?category=${category}`;
+  // Construct the URL with appropriate parameters
+  if (category && searchTerm) {
+    fetchUrl = `http://localhost:3000/api/events/search?category=${encodeURIComponent(
+      category
+    )}&title=${encodeURIComponent(searchTerm)}`;
+  } else if (category) {
+    fetchUrl = `http://localhost:3000/api/events/search?category=${encodeURIComponent(
+      category
+    )}`;
+  } else if (searchTerm) {
+    fetchUrl = `http://localhost:3000/api/events/search?title=${encodeURIComponent(
+      searchTerm
+    )}`;
   }
 
   fetch(fetchUrl)
