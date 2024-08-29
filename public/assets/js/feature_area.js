@@ -39,7 +39,7 @@ function displayEvents(events, section) {
     const img = document.createElement("img");
     img.src = `${event.images}`;
     img.className = "card-img-top";
-    img.alt = "...";
+    img.alt = event.title;
 
     imgLink.appendChild(img);
 
@@ -89,7 +89,7 @@ function displayEvents(events, section) {
 
     if (descLines.length > 2) {
       const readMore = document.createElement("span");
-      readMore.className = "read-more";
+      readMore.className = "ms-2 read-more";
       readMore.style.color = "blue";
       readMore.style.cursor = "pointer";
       readMore.textContent = " Read more";
