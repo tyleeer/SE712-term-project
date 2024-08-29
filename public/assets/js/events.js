@@ -121,7 +121,6 @@ function filterEvents() {
   const searchInput = document
     .getElementById("searchInput")
     .value.toLowerCase();
-
   fetch("/api/events/all") // Fetch all events
     .then((response) => response.json())
     .then((events) => {
@@ -132,6 +131,42 @@ function filterEvents() {
     })
     .catch((error) => console.error("Error:", error));
 }
+
+// Function to filter events by selected categories
+function filterEventsByCategory() {
+  // Get all checkboxes
+  const checkboxes = document.querySelectorAll(".form-check-input");
+
+  // Collect checked categories and convert to lowercase
+  const selectedCategories = Array.from(checkboxes)
+    .filter((checkbox) => checkbox.checked)
+    .map((checkbox) =>
+      checkbox.nextElementSibling.textContent.trim().toLowerCase()
+    );
+
+  // Fetch all events and filter based on selected categories
+  fetch("/api/events/all")
+    .then((response) => response.json())
+    .then((events) => {
+      if (selectedCategories.length > 0) {
+        // Filter events by selected categories, using lowercase for comparison
+        const filteredEvents = events.filter((event) =>
+          selectedCategories.includes(event.category.toLowerCase())
+        );
+        displayEvents(filteredEvents);
+      } else {
+        // No category selected, display all events
+        displayEvents(events);
+      }
+    })
+    .catch((error) => console.error("Error:", error));
+}
+
+// Add event listeners to all checkboxes
+const checkboxes = document.querySelectorAll(".form-check-input");
+checkboxes.forEach((checkbox) =>
+  checkbox.addEventListener("input", filterEventsByCategory)
+);
 
 // Load events when the page is loaded
 loadEvents();
