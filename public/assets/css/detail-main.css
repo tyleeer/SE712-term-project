@@ -12,6 +12,12 @@
   transform: translateX(-35%);
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    position: relative;
+    transform: translateX(0%);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1062,7 +1068,7 @@ ol {
   }
 
   .features.section {
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 40px;
   }
 }

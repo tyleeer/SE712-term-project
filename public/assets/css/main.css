@@ -12,6 +12,13 @@
   transform: translateX(-35%);
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    position: relative;
+    transform: translateX(0%);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

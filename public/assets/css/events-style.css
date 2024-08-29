@@ -45,11 +45,6 @@ section.hero-area {
     border-radius: 30px;
 }
 
-.eg-badge:hover {
-    background: #F20487;
-    color: #fff;
-}
-
 .card {
     position: relative;
     border-radius: 1rem;
@@ -70,6 +65,12 @@ section.hero-area {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .star {
+        left: 33%;
+    }
 }
 
 .star i {
@@ -102,4 +103,19 @@ section.hero-area {
     color: #fff;
     padding: 4px 10px;
     border-radius: 0 10px 0 0;
+}
+
+.button .btn {
+    height: 40px;
+    padding: 10px 15px;
+}
+
+.filter-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background-color: #F20487;
+    
+    display: flex;
+    justify-content: center;
 }

@@ -43,7 +43,7 @@ function displayEvents(events) {
   for (const event of events) {
     // Create the main div element with classes
     const colDiv = document.createElement("div");
-    colDiv.className = "col-lg-6 wow fadeInUp";
+    colDiv.className = "col-md-6 wow fadeInUp mb-3";
     colDiv.setAttribute("data-wow-delay", ".2s");
 
     // Create the card div with classes

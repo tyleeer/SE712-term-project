@@ -12,6 +12,13 @@
   transform: translateX(-35%);
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    position: relative;
+    transform: translateX(0%);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3080,4 +3087,9 @@ only screen and (min-width: 1400px) {
 
 .footer .copyright .copyright-text a:hover {
   color: #F20487;
+}
+
+.events-show {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

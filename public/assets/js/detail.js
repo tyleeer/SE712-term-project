@@ -75,6 +75,13 @@ function displayEvents(event) {
   const eventLocation = document.getElementById("event-location");
   const eventHosted = document.getElementById("event-hosted");
   const eventDesc = document.getElementById("event-desc");
+  const updateAnchor = document.getElementById("updateAnchor");
+
+  if (!updateAnchor) {
+    console.error("updateAnchor image element not found.");
+    return;
+  }
+  updateAnchor.href = `update.html?id=${event.id}`;
 
   if (!thumbnailImage) {
     console.error("Thumbnail image element not found.");

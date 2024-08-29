@@ -3,6 +3,12 @@ section.hero-area {
   max-height: 450px;
 }
 
+@media (max-width: 768px) {
+  section.hero-area {
+      max-height: 350px;
+    }
+}
+
 .category {
   width: 125px;
   height: 125px;
@@ -43,11 +49,6 @@ section.hero-area {
   border-color: #f20487;
   padding: 0px 24px;
   border-radius: 30px;
-}
-
-.eg-badge:hover {
-  background: #f20487;
-  color: #fff;
 }
 
 .card {
