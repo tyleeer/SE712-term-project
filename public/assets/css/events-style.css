@@ -1,5 +1,6 @@
 section.hero-area {
-    height: 40dvh;
+    height: 50dvh;
+    max-height: 350px;
 }
 
 .category {
@@ -53,6 +54,7 @@ section.hero-area {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
+    max-height: 200px;
 }
 
 .star {
@@ -76,7 +78,7 @@ section.hero-area {
 }
 
 .card .overlay {
-    height: 150px;
+    height: 200px;
     width: 45%;
     overflow: hidden;
     position: relative;
@@ -86,7 +88,7 @@ section.hero-area {
     width: 55%;
 }
 
-.overlay img {
+.overlay img, .overlay a {
     height: 100%;
     width: 100%;
     object-fit: cover;

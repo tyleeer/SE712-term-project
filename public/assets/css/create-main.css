@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar-nav {
+  position: relative;
+  transform: translateX(-35%);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;

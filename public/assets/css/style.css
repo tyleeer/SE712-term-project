@@ -1,5 +1,6 @@
 section.hero-area {
   height: 70dvh;
+  max-height: 450px;
 }
 
 .category {
