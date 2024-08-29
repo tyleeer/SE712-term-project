@@ -120,10 +120,8 @@ function displayEvents(event) {
   }
 
   const map = L.map("event-map").setView([event.lat, event.lon], 12); // ใส่ค่าของ lat long ที่คุณต้องการ
-
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
   }).addTo(map);
-
   L.marker([event.lat, event.lon]).addTo(map).bindPopup("Here!").openPopup();
 }
