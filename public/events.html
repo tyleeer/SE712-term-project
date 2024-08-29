@@ -53,9 +53,15 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="#" aria-label="Toggle navigation">Home</a>
+                                        <a href="./index.html" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a href="#" aria-label="Toggle navigation">Events</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./create.html" aria-label="Toggle navigation">Create event</a>
+                                    </li>                                      
+                                    <!-- <li class="nav-item">
                                         <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
                                             data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
                                             aria-expanded="false" aria-label="Toggle navigation">Pages</a>
@@ -86,7 +92,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="contact.html" aria-label="Toggle navigation">Contact</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div> <!-- navbar collapse -->
                         </nav>
@@ -108,7 +114,7 @@
                         </h2>
                         <div class="input-group wow fadeInUp" data-wow-delay=".6s">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                            <input type="text" class="form-control" placeholder="CMU Marathon, Music festival,..."
+                            <input id="searchInput" type="text" class="form-control" placeholder="CMU Marathon, Music festival,..."
                                 aria-label="Username" aria-describedby="basic-addon1">
                             <div class="input-group-text" id="basic-addon1">
                                 <i class="bi bi-geo-alt"></i>
@@ -263,7 +269,7 @@
                     <div class="section-title d-flex justify-content-between align-items-center wow fadeInUp"
                         data-wow-delay=".2s">
                         <div class="button">
-                            <a href="javascript:void(0)" class="btn"><i class="bi bi-calendar-plus me-2"></i>
+                            <a href="./create.html" class="btn"><i class="bi bi-calendar-plus me-2"></i>
                                 Create
                                 Event</i></a>
                         </div>
@@ -277,8 +283,8 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="row row-cols-1 row-cols-md-3 g-4" id="show-events">
+                        <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="card d-flex flex-row">
                                 <div class="star">
                                     <i class="bi bi-star"></i>
@@ -349,7 +355,7 @@
                                     <p class="card-text">8:30 AM - 7:30 PM</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -472,6 +478,7 @@
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/sidebars.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/events.js"></script>
 </body>
 
 </html>
