@@ -40,11 +40,6 @@
     border-radius: 30px;
 }
 
-.eg-badge:hover {
-    background: #F20487;
-    color: #fff;
-}
-
 .card {
     position: relative;
     border-radius: 1rem;
