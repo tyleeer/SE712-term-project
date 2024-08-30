@@ -1,4 +1,32 @@
 let urlEventId;
+let startDateStr = "",
+  endDateStr = "",
+  dateTime = "";
+
+document.addEventListener("DOMContentLoaded", () => {
+  AddEvents();
+});
+
+const form = document.getElementById("eventForm");
+function AddEvents() {
+  form.addEventListener("change", (e) => onChanged(e));
+}
+
+function onChanged(e) {
+  if (e.target.name == "startDate") {
+    startDateStr =
+      new Date(e.target.value).toDateString("th-TH") +
+      " at " +
+      new Date(e.target.value).toLocaleTimeString("th-TH");
+  } else if (e.target.name == "endDate") {
+    endDateStr =
+      new Date(e.target.value).toDateString("th-TH") +
+      " at " +
+      new Date(e.target.value).toLocaleTimeString("th-TH");
+  }
+  dateTime = `${startDateStr}${endDateStr != "" ? " to " + endDateStr : ""}`;
+}
+
 // ฟังก์ชันเพื่อดึงค่า parameter จาก URL
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -14,7 +42,7 @@ function onPageLoad() {
     return; // Exit if ID is missing
   }
 
-  console.log("ID:", id);
+  // console.log("ID:", id);
   urlEventId = id;
   loadEvents(id);
 
@@ -79,9 +107,18 @@ function displayEvents(eventData) {
   document.getElementById("lat").value = eventData.lat || "";
   document.getElementById("lon").value = eventData.lon || "";
   document.getElementById("hosted").value = eventData.hosted || "";
-  document.getElementById("eventDescription").value = eventData.eventDescription
-    ? eventData.eventDescription.join(" ")
-    : "";
+
+  if (eventData.eventDescription) {
+    if (Array.isArray(eventData.eventDescription)) {
+      document.getElementById("eventDescription").value =
+        eventData.eventDescription.join(" ");
+    } else {
+      document.getElementById("eventDescription").value =
+        eventData.eventDescription;
+    }
+  } else {
+    document.getElementById("eventDescription").value = "";
+  }
 }
 
 function updateEvent(eventId) {
@@ -93,14 +130,16 @@ function updateEvent(eventId) {
     lat: document.getElementById("lat").value,
     lon: document.getElementById("lon").value,
     hosted: document.getElementById("hosted").value,
-    eventDescription: document
-      .getElementById("eventDescription")
-      .value.split(" "),
+    eventDescription: document.getElementById("eventDescription").value,
+    datetime: dateTime,
   };
+
+  // console.log(updatedEventData);
 
   // datetime: new Date(document.getElementById("startDate").value).toISOString(), // Convert to ISO string
 
   // Call the PUT API to update the event
+
   fetch(`/api/events/${eventId}`, {
     method: "PUT",
     headers: {
