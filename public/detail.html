@@ -61,44 +61,18 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="#" class="active" aria-label="Toggle navigation">Home</a>
+                                        <a href="./index.html" class="active" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Pages</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item"><a href="about-us.html">About Us</a></li>
-                                            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
-                                            <li class="nav-item"><a href="pricing.html">Pricing</a></li>
-                                            <li class="nav-item"><a href="sponsors.html">Sponsors</a></li>
-                                            <li class="nav-item"><a href="mail-success.html">Mail Success</a></li>
-                                            <li class="nav-item"><a href="404.html">404 Error</a></li>
-                                        </ul>
+                                        <a href="./events.html" aria-label="Toggle navigation">Events</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about-us.html" aria-label="Toggle navigation">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="speakers.html" aria-label="Toggle navigation">Speakers</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-2">
-                                            <li class="nav-item"><a href="blog-grid.html">Blog Grid</a>
-                                            </li>
-                                            <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                        <a href="./create.html" aria-label="Toggle navigation">Create Event</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="button">
-                                <a href="pricing.html" class="btn"><i class="bi bi-calendar-plus me-2"></i>Create
+                                <a href="./create.html" class="btn"><i class="bi bi-calendar-plus me-2"></i>Create
                                     Event</i></a>
                             </div>
                         </nav>
@@ -123,37 +97,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title d-flex justify-content-between wow fadeInUp" data-wow-delay=".4s">
+                    <div class="section-title d-flex justify-content-between flex-column flex-lg-row gap-3 wow fadeInUp"
+                        data-wow-delay=".4s">
                         <h1 id="event-title">Sound Of Christmas 2023</h1>
                         <div>
                             <i class="bi bi-star-fill h2 me-2"></i>
                             <i class="bi bi-share-fill h2"></i>
                         </div>
                     </div>
-                    <div class="section-title d-flex justify-content-between">
-                        <div class="col-lg-9">
-                            <h4 class="wow fadeInUp" data-wow-delay=".4s">Date and Time</h4>
+                    <div class="section-title d-flex flex-column flex-lg-row justify-content-between wow fadeInUp gap-3"
+                        data-wow-delay=".4s">
+                        <div class="col-12 col-lg-9 gap-3">
+                            <h4>Date and Time</h4>
                             <p id="event-datetime"><i class="bi bi-calendar-plus me-2"></i>Saturday, 2 December 2023</p>
                             <!-- <p><i class="bi bi-clock me-2"></i>6:30 PM - 9:30 PM</p> -->
-                            <h4 class="wow fadeInUp" data-wow-delay=".4s">Location</h4>
+                            <h4>Location</h4>
                             <p id="event-location"><i class="bi bi-geo-alt me-2"></i>Bal Gandharva Rang Mandir, Near
                                 Junction Of 24th & 32nd
                                 Road & Patwardhan Park,Off Linking Road, Bandra West., Mumbai,
                                 India</p>
-                            <!-- <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120866.80545157299!2d98.95647724999998!3d18.79424590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7e90bb6f5d%3A0x98d46270a59b4367!2z4LmA4LiX4Lio4Lia4Liy4Lil4LiZ4LiE4Lij4LmA4LiK4Li14Lii4LiH4LmD4Lir4Lih4LmIIOC4reC4s-C5gOC4oOC4reC5gOC4oeC4t-C4reC4h-C5gOC4iuC4teC4ouC4h-C5g-C4q-C4oeC5iCDguYDguIrguLXguKLguIfguYPguKvguKHguYg!5e0!3m2!1sth!2sth!4v1724809474345!5m2!1sth!2sth"
-                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                             <div id="event-map"></div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="button-group d-flex">
+                            <div class="button-group d-flex flex-wrap mb-3">
                                 <div class="button me-2">
-                                    <a href="pricing.html" class="btn"><i class="bi bi-ticket-perforated-fill me-2"
-                                            style="transform: rotateZ(-45deg);"></i>Buy Tickets</a>
+                                    <a id="updateAnchor" class="btn"><i class="bi bi-folder-plus"></i> Update</a>
                                 </div>
                                 <div class="button">
-                                    <button type="button" id="deleteButton" class="btn btn-danger">Delete</button>
+                                    <button type="button" id="deleteButton" class="btn btn-danger"><i
+                                            class="bi bi-trash3"></i> Delete</button>
                                 </div>
                             </div>
                             <h4 class="wow fadeInUp" data-wow-delay=".4s"
@@ -162,7 +134,7 @@
                             <p><i class="bi bi-ticket-perforated-fill me-2"
                                     style="transform: rotateZ(-45deg);"></i>Standard Ticket: ₹ 200 each</p>
 
-                            <h4 class="wow fadeInUp" data-wow-delay=".4s"
+                            <h4 class="wow fadeInUp  mt-3" data-wow-delay=".4s"
                                 style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Hosted by
                             </h4>
                             <div class="d-flex align-items-center gap-2">
@@ -177,8 +149,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-title">
-                        <h4 class="wow fadeInUp" data-wow-delay=".4s">Event Description</h4>
+                    <div class="section-title wow fadeInUp" data-wow-delay=".4s">
+                        <h4>Event Description</h4>
                         <p id="event-desc">Get ready to kick off the Christmas season in Mumbai with SOUND OF CHRISTMAS
                             - your favourite
                             LIVE Christmas concert!
@@ -196,8 +168,8 @@
                             1. The FIRST Christmas concert of Mumbai!
                             2. A special Christmas Choir!
                             3. Special Dance performances and many more surprises!</p>
-                        <h4 class="wow fadeInUp" data-wow-delay=".4s">Tags</h4>
-                        <div class="wow fadeInUp" data-wow-delay=".6s">
+                        <h4 class="wow fadeInUp my-3" data-wow-delay=".4s">Tags</h4>
+                        <div class="wow fadeInUp d-flex flex-wrap gap-2" data-wow-delay=".6s">
                             <div class="eg-badge">Holiday Concert</div>
                             <div class="eg-badge">Live Performance</div>
                             <div class="eg-badge">Seasonal Event</div>
@@ -210,7 +182,7 @@
                 <h4 class="wow fadeInUp" data-wow-delay=".4s">Other events you may like</h4>
 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col wow fadeInLeft" data-wow-delay=".2s">
+                    <div class="col wow fadeInUp" data-wow-delay=".2s">
                         <div class="card">
                             <div class="star">
                                 <i class="bi bi-star"></i>
@@ -227,7 +199,7 @@
                                     <h5 class="card-text text-center">25-26</h5>
                                 </div>
                                 <div class="card-body ps-0 w-75">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Doi Inthanon Camping</h5>
                                     <p class="card-text fw-bold">This is a longer card with supporting text below as a
                                         natural</p>
                                     <p class="card-text">8:30 AM - 7:30 PM</p>
@@ -235,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col wow fadeInLeft" data-wow-delay=".2s">
+                    <div class="col wow fadeInUp" data-wow-delay=".2s">
                         <div class="card">
                             <div class="star">
                                 <i class="bi bi-star"></i>
@@ -246,16 +218,21 @@
                                     Entertainment
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional
-                                    content. This content is a little bit longer.</p>
+                            <div class="d-flex">
+                                <div class="card-body w-25">
+                                    <h5 class="card-title text-center">NOV</h5>
+                                    <h5 class="card-text text-center">25-26</h5>
+                                </div>
+                                <div class="card-body ps-0 w-75">
+                                    <h5 class="card-title">The Sound of Christmas</h5>
+                                    <p class="card-text fw-bold">This is a longer card with supporting text below as a
+                                        natural</p>
+                                    <p class="card-text">8:30 AM - 7:30 PM</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col wow fadeInLeft" data-wow-delay=".2s">
+                    <div class="col wow fadeInUp" data-wow-delay=".2s">
                         <div class="card">
                             <div class="star">
                                 <i class="bi bi-star"></i>
@@ -266,12 +243,17 @@
                                     Sports & Fitness
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional
-                                    content.</p>
+                            <div class="d-flex">
+                                <div class="card-body w-25">
+                                    <h5 class="card-title text-center">NOV</h5>
+                                    <h5 class="card-text text-center">25-26</h5>
+                                </div>
+                                <div class="card-body ps-0 w-75">
+                                    <h5 class="card-title">Cricket and business meet</h5>
+                                    <p class="card-text fw-bold">This is a longer card with supporting text below as a
+                                        natural</p>
+                                    <p class="card-text">8:30 AM - 7:30 PM</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -297,23 +279,6 @@
                                 </div>
                                 <p>A business conference organize by EventGrids In. World’s most influential media,
                                     entertainment & technology.</p>
-                                <span class="social-title">
-                                    Follow Us On:
-                                </span>
-                                <ul class="social">
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- End Single Widget -->
                         </div>
@@ -353,7 +318,7 @@
                                     <input name="name" placeholder="Your Name*" required="required" type="text">
                                     <input name="email" placeholder="Email address*" required="required" type="email">
                                     <div class="button">
-                                        <button class="btn">Subscribe
+                                        <button class="btn text-white">Subscribe
                                         </button>
                                     </div>
                                 </form>
@@ -385,7 +350,7 @@
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
+        <i class="bi bi-arrow-up"></i>
     </a>
 
     <!-- ========================= JS here ========================= -->

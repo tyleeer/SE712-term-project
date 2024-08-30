@@ -87,20 +87,20 @@ function displayEvents(events, section) {
 
     eventDesc.innerHTML = previewDesc;
 
-    if (descLines.length > 2) {
-      const readMore = document.createElement("span");
-      readMore.className = "ms-2 read-more";
-      readMore.style.color = "blue";
-      readMore.style.cursor = "pointer";
-      readMore.textContent = " Read more";
+    // if (descLines.length > 2) {
+    //   const readMore = document.createElement("span");
+    //   readMore.className = "ms-2 read-more";
+    //   readMore.style.color = "blue";
+    //   readMore.style.cursor = "pointer";
+    //   readMore.textContent = " Read more";
 
-      // Add click event to expand the description
-      readMore.addEventListener("click", () => {
-        eventDesc.innerHTML = fullDesc;
-      });
+    //   // Add click event to expand the description
+    //   readMore.addEventListener("click", () => {
+    //     eventDesc.innerHTML = fullDesc;
+    //   });
 
-      eventDesc.appendChild(readMore);
-    }
+    //   eventDesc.appendChild(readMore);
+    // }
 
     // Append the title, date, and description to the details body
     detailsCardBody.appendChild(eventLink); // Clickable title link

@@ -53,39 +53,13 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="#" aria-label="Toggle navigation">Home</a>
+                                        <a href="./index.html" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Pages</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item"><a href="about-us.html">About Us</a></li>
-                                            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
-                                            <li class="nav-item"><a href="pricing.html">Pricing</a></li>
-                                            <li class="nav-item"><a href="sponsors.html">Sponsors</a></li>
-                                            <li class="nav-item"><a href="mail-success.html">Mail Success</a></li>
-                                            <li class="nav-item"><a href="404.html">404 Error</a></li>
-                                        </ul>
+                                        <a href="#" class="active" aria-label="Toggle navigation">Events</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about-us.html" class="active" aria-label="Toggle navigation">Events</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="speakers.html" aria-label="Toggle navigation">Speakers</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-2">
-                                            <li class="nav-item"><a href="blog-grid.html">Blog Grid</a>
-                                            </li>
-                                            <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                        <a href="./create.html" aria-label="Toggle navigation">Create Event</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -108,15 +82,13 @@
                         </h2>
                         <div class="input-group wow fadeInUp" data-wow-delay=".6s">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
-                            <input type="text" class="form-control" placeholder="CMU Marathon, Music festival,..."
-                                aria-label="Username" aria-describedby="basic-addon1">
+                            <input id="searchInput" type="text" class="form-control"
+                                placeholder="CMU Marathon, Music festival,..." aria-label="Username"
+                                aria-describedby="basic-addon1">
                             <div class="input-group-text" id="basic-addon1">
                                 <i class="bi bi-geo-alt"></i>
                                 <select class="form-select border-0 bg-transparent shadow-none">
-                                    <option selected>Chiand Mai</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Chiang Mai</option>
                                 </select>
                             </div>
                         </div>
@@ -127,39 +99,14 @@
     </section>
     <!-- End Hero Area -->
 
-    <div class="row">
+    <section class="events-show d-flex position-relative">
 
-        <div class="col-2 sidebar-container flex-shrink-0 bg-white wow fadeInLeft" data-wow-delay=".2s">
-            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                <svg class="bi me-2" width="30" height="24">
-                    <use xlink:href="#bootstrap" />
-                </svg>
+        <div class="d-none d-md-block col-md-2 sidebar-container flex-shrink-0 bg-white wow fadeInLeft">
+            <div
+                class="d-flex align-items-center pb-1 pb-md-3 mb-1 mb-md-3 link-dark text-decoration-none border-bottom">
                 <span class="fs-5 fw-semibold">Filters</span>
-            </a>
+            </div>
             <ul class="list-unstyled ps-0">
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#home-collapse" aria-expanded="true">
-                        Price
-                    </button>
-                    <div class="collapse show" id="home-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li>
-                                <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
-                                    <input class="form-check-input mt-0" type="checkbox" value=""
-                                        aria-label="Checkbox for following text input" />
-                                    <span>Free</span>
-                            </li>
-                            <li>
-                                <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
-                                    <input class="form-check-input mt-0" type="checkbox" value=""
-                                        aria-label="Checkbox for following text input" />
-                                    <span>Paid</span>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="border-top my-3"></li>
                 <li class="mb-1">
                     <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                         data-bs-target="#home-collapse-2" aria-expanded="true">
@@ -171,43 +118,43 @@
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Music</span>
                             </li>
                             <li>
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Business</span>
                             </li>
                             <li>
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Sport</span>
                             </li>
                             <li>
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Cultural & Arts</span>
                             </li>
                             <li>
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Technology & Innovation</span>
                             </li>
                             <li>
                                 <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
                                     <input class="form-check-input mt-0" type="checkbox" value=""
                                         aria-label="Checkbox for following text input" />
-                                    <span>Overview</span>
+                                    <span>Travel & Adventure</span>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="border-top my-3"></li>
-                <li class="mb-1">
+                <!-- <li class="mb-1">
                     <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                         data-bs-target="#home-collapse-2" aria-expanded="true">
                         Date
@@ -252,110 +199,91 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
 
-        <div class="col-10">
-            <!-- Start Features Area -->
-            <section class="features section">
-                <div class="container">
-                    <div class="section-title d-flex justify-content-between align-items-center wow fadeInUp"
-                        data-wow-delay=".2s">
-                        <div class="button">
-                            <a href="javascript:void(0)" class="btn"><i class="bi bi-calendar-plus me-2"></i>
-                                Create
-                                Event</i></a>
-                        </div>
-                        <div class="d-flex align-items-center w-25">
-                            <h5 class="ms-4 w-50">Sort by: </h5>
-                            <select class="form-select shadow-none">
-                                <option selected>Chiand Mai</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="card d-flex flex-row">
-                                <div class="star">
-                                    <i class="bi bi-star"></i>
-                                </div>
-                                <div class="overlay">
-                                    <img src="assets/images/events/event-1.png" class="card-img-top" alt="...">
-                                    <div class="desc">
-                                        Travel & Adventure
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Delhi 6 - Traditional Food from Delhi Street</h5>
-                                    <p class="card-text fw-bold">Nov 23 - 29 | Chengalpattu, India</p>
-                                    <p class="card-text">8:30 AM - 7:30 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="card d-flex flex-row">
-                                <div class="star">
-                                    <i class="bi bi-star"></i>
-                                </div>
-                                <div class="overlay">
-                                    <img src="assets/images/events/event-1.png" class="card-img-top" alt="...">
-                                    <div class="desc">
-                                        Travel & Adventure
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Delhi 6 - Traditional Food from Delhi Street</h5>
-                                    <p class="card-text fw-bold">Nov 23 - 29 | Chengalpattu, India</p>
-                                    <p class="card-text">8:30 AM - 7:30 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="card d-flex flex-row">
-                                <div class="star">
-                                    <i class="bi bi-star"></i>
-                                </div>
-                                <div class="overlay">
-                                    <img src="assets/images/events/event-1.png" class="card-img-top" alt="...">
-                                    <div class="desc">
-                                        Travel & Adventure
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Delhi 6 - Traditional Food from Delhi Street</h5>
-                                    <p class="card-text fw-bold">Nov 23 - 29 | Chengalpattu, India</p>
-                                    <p class="card-text">8:30 AM - 7:30 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="card d-flex flex-row">
-                                <div class="star">
-                                    <i class="bi bi-star"></i>
-                                </div>
-                                <div class="overlay">
-                                    <img src="assets/images/events/event-1.png" class="card-img-top" alt="...">
-                                    <div class="desc">
-                                        Travel & Adventure
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Delhi 6 - Traditional Food from Delhi Street</h5>
-                                    <p class="card-text fw-bold">Nov 23 - 29 | Chengalpattu, India</p>
-                                    <p class="card-text">8:30 AM - 7:30 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="d-flex flex-column gap-3 mt-3 col-12 col-md-10 position-relative">
+
+            <div class="d-flex justify-content-end align-items-center wow fadeInUp" data-wow-delay=".2s">
+
+                <div class="position-absolute d-md-none" style="left: 0;">
+                    <button class="filter-btn btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#testBar"
+                        aria-expanded="true">
+                        <i class="bi bi-filter-circle h1 text-white m-0 p-0"></i></button>
                 </div>
-            </section>
-            <!-- /End Features Area -->
+
+                <div id="testBar"
+                    class="position-absolute d-md-none collapse navbar-collapse w-75 sidebar-container border-1 flex-shrink-0 bg-white rounded-3"
+                    style="left: 0; top: 3rem; z-index: 10;">
+                    <div
+                        class="d-flex align-items-center pb-1 pb-md-3 mb-1 mb-md-3 link-dark text-decoration-none border-bottom">
+                        <span class="fs-5 fw-semibold">Filters</span>
+                    </div>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse-2" aria-expanded="true">
+                                Category
+                            </button>
+                            <div class="collapse show" id="home-collapse-2">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Music</span>
+                                    </li>
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Business</span>
+                                    </li>
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Sport</span>
+                                    </li>
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Cultural & Arts</span>
+                                    </li>
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Technology & Innovation</span>
+                                    </li>
+                                    <li>
+                                        <div class="link-dark rounded d-flex flex-row align-items-center gap-2 ms-4">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input" />
+                                            <span>Travel & Adventure</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                    </ul>
+                </div>
+
+
+                <div class="button">
+                    <a href="./create.html" class="btn"><i class="bi bi-calendar-plus me-2"></i>
+                        Create
+                        Event</i></a>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 gap-3 gap-md-0 row-cols-md-3" id="show-events">
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- Start Footer Area -->
     <footer class="footer">
@@ -372,26 +300,10 @@
                                         <img src="assets/images/logo/logo.svg" alt="#">
                                     </a>
                                 </div>
-                                <p>A business conference organize by EventGrids In. World’s most influential
+                                <p>A business conference organize by EventGrids In. World’s most
+                                    influential
                                     media,
                                     entertainment & technology.</p>
-                                <span class="social-title">
-                                    Follow Us On:
-                                </span>
-                                <ul class="social">
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-twitter-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
-                                    </li>
-                                </ul>
                             </div>
                             <!-- End Single Widget -->
                         </div>
@@ -414,11 +326,11 @@
                             <div class="single-footer f-link">
                                 <h3>Know More</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">About Us</a></li>
-                                    <li><a href="javascript:void(0)">Our Pricing</a></li>
-                                    <li><a href="javascript:void(0)">Faq</a></li>
-                                    <li><a href="javascript:void(0)">Guides</a></li>
-                                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Pricing</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -431,7 +343,7 @@
                                     <input name="name" placeholder="Your Name*" required="required" type="text">
                                     <input name="email" placeholder="Email address*" required="required" type="email">
                                     <div class="button">
-                                        <button class="btn">Subscribe
+                                        <button class="btn text-white">Subscribe
                                         </button>
                                     </div>
                                 </form>
@@ -463,15 +375,17 @@
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
+        <i class="bi bi-arrow-up"></i>
     </a>
 
     <!-- ========================= JS here ========================= -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/sidebars.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/events.js"></script>
 </body>
 
 </html>

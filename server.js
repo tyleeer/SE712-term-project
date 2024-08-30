@@ -127,6 +127,41 @@ app.post("/api/events", (req, res) => {
   }
 });
 
+app.put("/api/events/:id", (req, res) => {
+  try {
+    const eventId = parseInt(req.params.id, 10);
+    console.log("PUT request received for event ID:", eventId);
+
+    let events = readEventsFromFile();
+    const eventIndex = events.findIndex((event) => event.id === eventId);
+
+    if (eventIndex !== -1) {
+      // Only update fields that are provided in the request body
+      const updatedEvent = {
+        ...events[eventIndex], // Existing event data
+        ...Object.keys(req.body).reduce((acc, key) => {
+          if (req.body[key] !== undefined && req.body[key] !== null) {
+            acc[key] = req.body[key];
+          }
+          return acc;
+        }, {}),
+      };
+
+      events[eventIndex] = updatedEvent;
+      writeEventsToFile(events);
+      console.log("updated event: ", events);
+
+      res.json(updatedEvent);
+    } else {
+      console.log("Event not found with ID:", eventId);
+      res.status(404).send("Event not found");
+    }
+  } catch (error) {
+    console.error("Error updating event:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
