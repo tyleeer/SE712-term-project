@@ -19,7 +19,8 @@ const createObj = {
   hosted: "",
   eventDescription: "",
   tags: "",
-  images: "https://example.com/images/tech-conference.jpg",
+  images:
+    "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F817703069%2F512516274193%2F1%2Foriginal.20240731-072617?w=600&auto=format%2Ccompress&q=75&sharp=10&s=b15ed3269ca56ee3dd1c1153a654945b",
   lat: "",
   lon: "",
 };
